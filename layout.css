@@ -54,9 +54,19 @@
   .linkdiv{
     color:white;
     text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  .btn{
+  .btao{
     /*background-color: rgb(155, 151, 151);*/
     background-color: black;
     color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 60%;
+    width: 166px;
+  }
+  .margem{
+    padding: 1.3%;
+
   }
