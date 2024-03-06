@@ -1,13 +1,21 @@
 function login(){
     let email = document.querySelector('').value;
     let senha = document.querySelector('').value;
-
-    var dados = JSON.parse(localStorage.getItem('logins')) || [];
+    let usuarioEncontrado = False
+    
+    const dados = JSON.parse(localStorage.getItem('logins')) || [];
     for(let i = 0 ; dados.length > i ; i++){
         if(email == dados[i].login && senha == dados[i].senha){
-            alert('Logado com sucesso!');
-            break;
-        }
+        //     usuarioEncontrado = True
+        //     alert('Logado com sucesso!')
+        //     break;
+        // }
+        // if(usuarioEncontrado){
+        //     window.open("index.html")
+        // }else{
+        //     alert("Cadastre-se!")
+        //     window.open("cadastro.html")
+        // }
     }
 }
 
