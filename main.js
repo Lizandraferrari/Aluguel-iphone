@@ -1,47 +1,58 @@
-function login(){
-    let email = document.querySelector('').value;
-    let senha = document.querySelector('').value;
-    let usuarioEncontrado = False
+function Logar(){
     
-    const dados = JSON.parse(localStorage.getItem('logins')) || [];
-    for(let i = 0 ; dados.length > i ; i++){
-        if(email == dados[i].login && senha == dados[i].senha){
-        //     usuarioEncontrado = True
-        //     alert('Logado com sucesso!')
-        //     break;
-        // }
-        // if(usuarioEncontrado){
-        //     window.open("index.html")
-        // }else{
-        //     alert("Cadastre-se!")
-        //     window.open("cadastro.html")
-        // }
-    }
-}
+    let nome = document.querySelector("#nome").value;
+    let senha = document.querySelector("#senha").value;
+    let banco = JSON.parse(localStorage.getItem("banco")); 
+    
+    let UsuarioEncontrado = false;
+    
+    if(banco){
+        for (let v = 0 ; v < banco.length; v++){
+                if (nome === banco[v].nome && senha === banco[v].senha) {
+                    alert("Achou!");
+                    UsuarioEncontrado = true;
+                    break;
+                }
+            }
+            
+            if (UsuarioEncontrado) {
+                window.open("index.html");
+            }else{
+                alert("Cadastre-se!");
+                window.open("cadastro.html");
+            }
+        }
+ }
 
-function cadastro(){
-    let email = document.querySelector('').value;
-    let senha = document.querySelector('').value;
-    let senha2 = document.querySelector('').value;
-    let cep = document.querySelector('').value;
-    let rua = document.querySelector('').value;
-    let numero = document.querySelector('').value;
-    let complemento = document.querySelector('').value;
-    let cpf = document.querySelector('').value;
-    let nome = document.querySelector('').value;
+function Cadastrar(){
+    
+    let nome = document.querySelector("#nome").value;
+    let senha = document.querySelector("#senha1").value;
+    let senha2 = document.querySelector("#senha2").value;
+    let email = document.querySelector("#email").value;
+    let cep = document.querySelector("#cep").value;
+    let rua = document.querySelector("#rua").value;
+    let numero = document.querySelector("#numero").value;
+    let cidade = document.querySelector("#cidade").value;
+    let estado = document.querySelector("#estado").value;
+    let complemento = document.querySelector("#complemento").value;
 
-    var dados = JSON.parse(localStorage.getItem('logins')) || [];
-    let usuario = {
-        id: Date.now() , login: email , senha: senha , cep: cep , rua: rua , num: numero , complemento: complemento , cpf: cpf , nome: nome
-    };
-    if (nome == "" ||  senha == "" || cep == "" ||email == ""|| rua == ""||senha2 == "" || numero == "" ||cpf == ""){
-        alert('Preencha todos os campos obrigatórios');
+    const banco = JSON.parse(localStorage.getItem("banco")) || []
+    let provaSenha = false;
+
+    if (senha == senha2 ) {
+        provaSenha = true;
     }else{
-        if (senha != senha2){
-            alert('As senhas inseridas estão diferentes');
-        }else{
-            //dados.push(usuario);
-            //localStorage.setItem('logins' , JSON.stringify(dados))
+        alert("Coloque sua senha igual a primeira!")
+        return;
+    }
+    if (provaSenha) {
+        let novoUsuario = {nome:nome,senha:senha,email:email,estado:estado,cidade:cidade,cep:cep,rua:rua,complemento:complemento,numero:numero}
+        banco.push(novoUsuario);
+        localStorage.setItem("banco",JSON.stringify(banco));
+        alert("cadastrado!");
+        window.open("login.html");
+    }else{
+        alert("Cadastro incompleto!");
         }
     }
-}
