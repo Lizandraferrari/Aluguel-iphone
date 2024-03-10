@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,16 +12,17 @@
     <div class="pos-f-t">
         <div class="collapse" id="navbarToggleExternalContent">
           <div class="bg-dark p-4">
-            <h4 class="text-white">Collapsed content</h4>
+            <h4 class="text-white">PAY OR RENT</h4>
             <span class="text-muted">Toggleable via the navbar brand.</span>
           </div>
         </div>
         <nav class="navbar navbar-dark bg-dark">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
+            <a href="index.html" style="color:white;text-decoration: none;">Home</a>
           </button>
-          <a href="index.html" style="color:white;">Home</a>
-          <img src = "image/apple.png" width = "3%">
+          
+          <img src = "image/apple.png" width = "8%">
           <div>
           <a class = "linkdiv" href = "login.html">Login</a>
           <a class = "linkdiv" href ="cadastro.html">Cadastro</a>
@@ -31,19 +32,19 @@
         <div class="form-group">
             <div class="row">
                 <div class = "col-7">
-            <label for="cadastro">Nome:</label>
-            <input type="email" class="form-control" id="cadastro" placeholder="Digite seu e-mail">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
                 </div>
                 <div class = "col-5">
-            <label for="cadastro">E-mail:</label>
-            <input type="email" class="form-control" id="cadastro" placeholder="Digite seu e-mail">
+            <label for="email">E-mail:</label>
+            <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
           </div>
         </div>
         </div><br>
             <div class = "row">
                 <div class="col-6">
             <label for="senha1">Senha:</label>
-            <input type="password" class="form-control" id="senha1" placeholder="Repita sua senha">
+            <input type="password" class="form-control" id="senha1" placeholder="Digite sua senha">
           </div>
             <div class = "col-6">
             <label for="senha2">Senha:</label>
@@ -52,8 +53,8 @@
         </div><br>
           <div class = "row">
             <div class = "col-3">
-                <label for="cep">Cep sem pontuação:</label>
-            <input type="number" class="form-control" id="cep" placeholder="Digite seu CEP">
+                <label for="cep">CEP:</label>
+            <input type="text" class="form-control" id="cep" placeholder="Digite seu CEP">
             </div>
             <div class="col-7">
                 <label for="rua">Rua:</label>
@@ -67,26 +68,27 @@
           <div class = "row">
             <div class = "col-4">
                 <label for="cep">Cidade:</label>
-            <input type="number" class="form-control" id="cep" placeholder="Digite seu CEP">
+            <input type="text" class="form-control" id="cidade" placeholder="Digite sua cidade">
             </div>
             <div class="col-2">
                 <label for="rua">Estado:</label>
-            <input type="text" class="form-control" id="rua" placeholder="Nome da rua">
+            <input type="text" class="form-control" id="estado" placeholder="Nome do Estado">
             </div>
             <div class="col-3">
                 <label for="numero">CPF:</label>
-            <input type="number" class="form-control" id="numero" placeholder="Número da casa">
+            <input type="text" class="form-control" id="cpf" placeholder="Número do cpf">
             </div>
             <div class="col-3">
                 <label for="numero">Complemento:</label>
-            <input type="number" class="form-control" id="numero" placeholder="Número da casa">
+            <input type="text" class="form-control" id="complemento" placeholder="Complemento">
             </div>
           </div><br>
           <div class="form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Concordo com os termos de uso</label>
           </div><br>
-          <button type="submit" class="btn ">Submit</button>
+          <button type="submit" id="submit" onclick="Cadastrar()">Submit</button>
+          <a href="login.html" style="margin-left: 100px;text-decoration: none;">Já sou cadastrado</a>
         </form>
     </div>
 </body>
