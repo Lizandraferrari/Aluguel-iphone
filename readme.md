@@ -4,7 +4,7 @@ Alugue um iphone já!
 
 Projeto desenvolvido para a matéria de Desenvolvimento Web II da Fatec Diadema
 Professor da matéria: Bruno Zolotareff dos Santos
-<br>
+<br><br>
 Membros do grupo:<br>
 Daniel de Azevedo Cordeiro<br>
 Lizandra de Jesus Ferrari
