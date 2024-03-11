@@ -24,7 +24,7 @@ class Header extends HTMLElement {
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-                <a class="hvr" href="#" >Todas opções</a>
+                <a class="hvr" href="produtos.html" >Todas opções</a>
               </li><br>
               <li class="nav-item">
                 <a class="hvr"  href="#" >Aluguel em estúdio sem fotográfo</a>
