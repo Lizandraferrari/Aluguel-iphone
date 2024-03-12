@@ -1,6 +1,6 @@
 function Logar(){
     
-    let nome = document.querySelector("#nome").value;
+    let email = document.querySelector("#email").value;
     let senha = document.querySelector("#senha").value;
     let banco = JSON.parse(localStorage.getItem("banco")); 
     
@@ -8,7 +8,7 @@ function Logar(){
     
     if(banco){
         for (let v = 0 ; v < banco.length; v++){
-                if (nome === banco[v].nome && senha === banco[v].senha) {
+                if (email === banco[v].email && senha === banco[v].senha) {
                     alert("Achou!");
                     UsuarioEncontrado = true;
                     break;
