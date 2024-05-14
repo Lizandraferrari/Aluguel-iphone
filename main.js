@@ -22,29 +22,31 @@ app.get('/index', (req, res) => {
     res.sendFile(path.join(pastaEstática, 'index.html'));
 });
 
+app.get('/login', (req,res) => res.sendFile(path.join(pastaEstática, 'login.html')))
+
 //Rota para o cadastro
 app.get('/cadastro', (req,res) => {
     res.sendFile(path.join(pastaEstática, 'cadastro.html'))
 })
 
 //Rota para login
-app.get('/login', (req,res) => res.sendFile(path.join(pastaEstática, 'login.html')))
-//puxa da pag cadastro
-app.post('/cadastro' , (req , res) =>{
-    // const dados = {
-    //     requisisa:nomeInput ,senha:'senha',email:'email',uf:'uf',cidade:'cidade',cep:123
-    // }
-    
-    // const requisisao = req.body
-    const dados = {                     //faz a requisição do corpo, do item com atributo name
-        login: req.body.nomeInput , email: req.body.emailInput
-    }
-    dao.addUser(dados , (result , err)=>{
-    }) 
-    res.send("foi")
-}
-)
 
+//puxa da pag cadastro
+app.post('/cadastro' , (req , res) =>{    
+    let senhaVar1 = req.body.senhaInput1
+    let senhaVar2 = req.body.senhaInput2
+    if (senhaVar1 == senhaVar2){
+        const dados = {               //faz a requisição, do corpo, do item com atributo "name" req.body.name
+            login: req.body.nomeInput , email: req.body.emailInput , senha: senhaVar1
+        }
+        dao.addUser(dados , (result , err)=>{
+        }) 
+        //res.sendFile(path.join(pastaEstática , 'login.html')) 
+        res.redirect('/login')
+}else{
+    res.send('As senhas precisam ser iguais!!')
+}
+})
 // Inicia o servidor na porta especificada
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`);
