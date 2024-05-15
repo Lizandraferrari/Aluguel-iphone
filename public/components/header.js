@@ -4,7 +4,6 @@ class Header extends HTMLElement {
     }
   
     connectedCallback() {
-<<<<<<< HEAD
       this.innerHTML = `      
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
       <link type="text/css" rel = "stylesheet" href="layout.css">
@@ -15,21 +14,10 @@ class Header extends HTMLElement {
         <a class="navbar-brand" href="index.html" >
         <img src = "image/iluga.png" style="width: 12%">
         </a>
-        <div id = "login" >
+        <div id = "login" class = "divNav" >
         <a class = "navbar-item linkdiv" href="cadastro.html">Cadastro</a>
         <a class = "navbar-item linkdiv" href="login.html">Login</a>
 </div>
-=======
-      this.innerHTML = `
-      <header>
-      <nav class="navbar navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/index" >
-        <img src = "image/iluga.png" style="width: 12%">
-        </a>
-        <a class = "navbar-item linkdiv" href="/cadastro">Cadastro</a>
-        <a class = "navbar-item linkdiv" href="/login">Login</a>
->>>>>>> refs/remotes/origin/main
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -44,7 +32,6 @@ class Header extends HTMLElement {
                 <a class="hvr" href="produtos.html" >Todas opções</a>
               </li><br>
               <li class="nav-item">
-<<<<<<< HEAD
                 <a class="hvr"  href="produtos.html" >Aluguel em estúdio sem fotográfo</a>
               </li><br>
               <li class="nav-item">
@@ -52,24 +39,11 @@ class Header extends HTMLElement {
               </li><br>
               <li class="nav-item">
                 <a class="hvr"  href=""produtos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-=======
-                <a class="hvr"  href="#" >Aluguel em estúdio sem fotográfo</a>
-              </li><br>
-              <li class="nav-item">
-                <a class="hvr"  href="#">Aluguel em estúdio com fotográfo</a>
-              </li><br>
-              <li class="nav-item">
-                <a class="hvr"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
->>>>>>> refs/remotes/origin/main
                   Aluguel com retirada do aparelho
                 </a>
                 </li><br><br><br>
                 <li class="nav-item position-absolute bottom-0 ">
-<<<<<<< HEAD
                 <a class="hvr"  href="produtos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false ">
-=======
-                <a class="hvr"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false ">
->>>>>>> refs/remotes/origin/main
                   Locais de retirada/estudios
                 </a><br><br>
                 </li>

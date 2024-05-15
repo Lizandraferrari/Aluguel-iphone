@@ -2,10 +2,11 @@ const { error } = require('console')
 const mysql = require('mysql2')
 
 const conexao = mysql.createConnection({
-    host:'127.0.0.1',
+    host:'localhost',
     user:'root',
-    password:'',
-    database:'fatec'
+    port: 3307,
+    password:'usbw',
+    database:'iluga'
 })
 
 conexao.connect((error) => {

@@ -13,17 +13,22 @@ function addUser(dados , callback){
         // console.log(result , ' adicionado')
         }
     )
-
 }
+/*
+function logaUser (email , callback){
+    let sql = 'SELECT email , senha FROM usuario WHERE email = ?'
+    connection.query(sql , [email] , (err , results) => {
+        if (err){
+            callback(err , null)
+        }else{
+            callback(null , results)
 
-const dados = {
-    login:'nome',senha:'senha',email:'email',uf:'uf',cidade:'cidade',cep:123
+        }
+    })
 }
-
-addUser(dados , (err, result)=>{
-    if (err) throw err
-})
+*/
 
 module.exports = {
-    addUser
+    addUser,
+    logaUser
 }

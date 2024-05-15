@@ -3,12 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-=======
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link type="text/css" rel = "stylesheet" href="layout.css">
->>>>>>> refs/remotes/origin/main
-    <script src="main.js"></script>    
+    <script src="front.js"></script>    
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
     <title>Cadastro</title>
@@ -17,19 +12,6 @@
   <header-component></header-component>
         <div class="container">
           <br><br><h1>Insira suas informações para o cadastro:</h1>
-<<<<<<< HEAD
-
-        <div class="form-group">
-          <form>
-            <div class="row">
-                <div class = "col-7">
-            <label for="nome">Nome:</label>
-            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
-                </div>
-                <div class = "col-5">
-            <label for="email">E-mail:</label>
-            <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
-=======
         <div class="form-group">
           <form method="post" action="/cadastro">
             <div class="row">
@@ -40,64 +22,53 @@
                 <div class = "col-5">
             <label for="email">E-mail:</label>
             <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail"name = 'emailInput'>
->>>>>>> refs/remotes/origin/main
           </div>
         </div>
         </div><br>
             <div class = "row">
-<<<<<<< HEAD
                 <div class="col-4">
-            <label for="senha1">Senha:</label>
-            <input type="password" class="form-control" id="senha1" placeholder="Digite sua senha">
-          </div>
-            <div class = "col-4">
-            <label for="senha2">Repita sua senha:</label>
-            <input type="password" class="form-control" id="senha2" placeholder="Repita sua senha">
-          </div>
-          <div class="col-4">
-            <label for="telefone">Telefone:</label>
-            <input type="text" class="form-control" id="telefone" placeholder="Celular com DDD">
-=======
-                <div class="col-6">
             <label for="senha1">Senha:</label>
             <input type="password" class="form-control" id="senha1" placeholder="Digite sua senha" name = "senhaInput1">
           </div>
-            <div class = "col-6">
+            <div class = "col-4">
             <label for="senha2">Repita sua senha:</label>
             <input type="password" class="form-control" id="senha2" placeholder="Repita sua senha" name = "senhaInput2">
->>>>>>> refs/remotes/origin/main
+          </div>
+          <div class="col-4">
+            <label for="telefone">Telefone:</label>
+            <input type="text" class="form-control" id="telefone" placeholder="Celular com DDD" name = "telefoneInput">
           </div>
         </div><br>
           <div class = "row">
             <div class = "col-3">
                 <label for="cep">CEP:</label>
-            <input type="text" class="form-control" id="cep" placeholder="Digite seu CEP">
+            <input type="text" class="form-control" id="cep" placeholder="Digite seu CEP" name = "cepInput">
             </div>
             <div class="col-7">
                 <label for="rua">Rua:</label>
-            <input type="text" class="form-control" id="rua" placeholder="Nome da rua">
+            <input type="text" class="form-control" id="rua" placeholder="Nome da rua" name = "ruaInput">
             </div>
             <div class="col-2">
                 <label for="numero">Número:</label>
-            <input type="number" class="form-control" id="numero" placeholder="Número da casa">
+            <input type="number" class="form-control" id="numero" placeholder="Número da casa" name = "numInput">
             </div>
           </div><br>
           <div class = "row">
             <div class = "col-4">
                 <label for="cep">Cidade:</label>
-            <input type="text" class="form-control" id="cidade" placeholder="Digite sua cidade">
+            <input type="text" class="form-control" id="cidade" placeholder="Digite sua cidade" name = "cidadeInput">
             </div>
             <div class="col-2">
                 <label for="rua">Estado:</label>
-            <input type="text" class="form-control" id="estado" placeholder="Nome do Estado">
+            <input type="text" class="form-control" id="estado" placeholder="Nome do Estado" name = "ufInput">
             </div>
             <div class="col-3">
                 <label for="numero">CPF:</label>
-            <input type="text" class="form-control" id="cpf" placeholder="Número do cpf">
+            <input type="text" class="form-control" id="cpf" placeholder="Número do cpf" name = "cpfInput">
             </div>
             <div class="col-3">
                 <label for="numero">Complemento:</label>
-            <input type="text" class="form-control" id="complemento" placeholder="Complemento">
+            <input type="text" class="form-control" id="complemento" placeholder="Complemento" name = "compInput">
             </div>
           </div><br>
           <div class="form-check">
