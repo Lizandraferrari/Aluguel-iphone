@@ -1,7 +1,21 @@
 {
+  "name": "aluguel-entrega",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
+    "ejs": "^3.1.10",
     "express": "^4.19.2",
-    "http": "^0.0.1-security",
-    "mysql2": "^3.9.7"
+    "express-ejs": "^2.0.0",
+    "express-session": "^1.18.0",
+    "mysql2": "^3.10.0",
+    "nodemon": "^3.1.3"
   }
 }

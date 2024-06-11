@@ -76,7 +76,7 @@ function Cadastrar(){
     let email = document.querySelector("#email").value;
     let senha = document.querySelector("#senha").value;
     let banco = JSON.parse(localStorage.getItem("banco")); 
-    
+    // 
     let UsuarioEncontrado = false;
     
     if(banco){

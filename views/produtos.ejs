@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <title>Produtos do Iluga</title>
+</head>
+<body>
+    <header-component></header-component>
+    <div class="container">
+        <br>
+        <h1 style="text-align: center;">Opções de Iphones</h1>
+        <div class="row">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="image/iphone15promax.png" width="100%">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Iphone 15 Pro Max</h1><br>
+                        <p>Especificações da câmera: Grande-angular de 48 MP, Ultra-angular de 12 MP</p>
+                        <p>Diversas opções de período!</p>
+                        <form action="/aluguel" method="post">
+                            <input type="hidden" name="produto" value="Iphone 15 Pro Max">
+                            <input type="hidden" name="especificacoes" value="Grande-angular de 48 MP, Ultra-angular de 12 MP, Teleobjetiva de 2x de 12 MP, Teleobjetiva de 5x de 12 MP">
+                            <label for="tempo">Tempo de Aluguel (dias):</label>
+                            <input type="number" id="tempo" name="tempo" required>
+                            <button type="submit" class="btncard">Alugar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repita o mesmo padrão para os outros produtos -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="image/iphone14.png" width="100%">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Iphone 14</h1><br>
+                        <p>Especificações da câmera: Grande-angular de 48 MP, Ultra-angular de 12 MP.</p>
+                        <p>Diversas opções de período!</p>
+                        <form action="/aluguel" method="post">
+                            <input type="hidden" name="produto" value="Iphone 14">
+                            <input type="hidden" name="especificacoes" value="Grande-angular de 48 MP, Ultra-angular de 12 MP">
+                            <label for="tempo">Tempo de Aluguel (dias):</label>
+                            <input type="number" id="tempo" name="tempo" required>
+                            <button type="submit" class="btncard">Alugar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="image/iphone13.png" width="100%">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Iphone 13</h1><br>
+                        <p>Especificações da câmera: Grande-angular de 48 MP, Ultra-angular de 12 MP.</p>
+                        <p>Diversas opções de período!</p>
+                        <form action="/aluguel" method="post">
+                            <input type="hidden" name="produto" value="Iphone 13">
+                            <input type="hidden" name="especificacoes" value="Grande-angular de 30 MP, Ultra-angular de 10 MP">
+                            <label for="tempo">Tempo de Aluguel (dias):</label>
+                            <input type="number" id="tempo" name="tempo" required>
+                            <button type="submit" class="btncard">Alugar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer-component></footer-component>
+</body>
+</html>

@@ -1,19 +1,17 @@
-const { error } = require('console')
 const mysql = require('mysql2')
-
 const conexao = mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    port: 3307,
-    password:'usbw',
-    database:'iluga'
+    user: 'root',
+    database: 'illuga',
+    password: '',
+    host: 'localhost'
 })
 
 conexao.connect((error) => {
     if(error){
-        console.log("Erro: ",error)
+        console.log("Houve um erro: ",error)
         return
-    }console.log("Conexao com o banco bem sucedida")
+    }
+    console.log("Conexao estabelecida com o banco de dados!")
 })
 
 module.exports = conexao

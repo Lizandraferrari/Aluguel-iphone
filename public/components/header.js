@@ -15,8 +15,8 @@ class Header extends HTMLElement {
         <img src = "image/iluga.png" style="width: 12%">
         </a>
         <div id = "login" class = "divNav" >
-        <a class = "navbar-item linkdiv" href="cadastro.html">Cadastro</a>
-        <a class = "navbar-item linkdiv" href="login.html">Login</a>
+        <a class = "navbar-item linkdiv" href="/cadastro">Cadastro</a>
+        <a class = "navbar-item linkdiv" href="/login">Login</a>
 </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
